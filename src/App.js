@@ -4,6 +4,7 @@ import Menu from './Sections/Menu';
 import About from './Sections/About';
 import Experience from './Sections/Experience';
 import Skills from './Sections/Skills';
+import Contact from './Sections/Contact';
 import jsonData from './data';
 
 class App extends Component {
