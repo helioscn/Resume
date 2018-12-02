@@ -1,11 +1,11 @@
 import React from 'react';
 
-const skills = (props) => {
+const contact = (props) => {
 	return (
-		<div onmousedown="return false" id='page-container-3' className='_page-container' style={{zIndex: props.visible, opacity: props.visible}}>
+		<div onmousedown="return false" id='page-container-4' className='_page-container' style={{zIndex: props.visible, opacity: props.visible}}>
 
 		</div>
 	)
 };
 
-export default skills;
+export default contact;
