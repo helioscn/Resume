@@ -1,0 +1,258 @@
+@font-face {
+	font-family: "Copperplate";
+	src: url('Fonts/Copperplate Gothic Light Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url('Fonts/Quicksand/Quicksand-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	font-family: "Copperplate";
+	min-height: 100%;
+}
+
+#main-container {
+	width: 1024px;
+	height: 600px;
+	margin: auto;
+	position: absolute;
+	overflow: hidden;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+._page-container {
+	width: 704px;
+	height: auto;
+	position: absolute;
+	padding-left: 48px;
+	box-sizing: border-box;
+	opacity: 0;
+	display: inline-block;
+	color: #444;
+}
+
+._page-container p {
+	font-size: 18px;
+	line-height: 26px;
+	font-family: "Quicksand";
+}
+
+._page-container h1 {
+	font-size: 24px;
+}
+
+#timeline {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 124px;
+	position: relative;
+	display: grid;
+	grid-template-columns: 30px 212px 30px 212px 30px;
+}
+
+._circle-base {
+	border-radius: 15px;
+	background-color: #444;
+	box-shadow: inset 0 0 5px #000;
+	width: 0;
+	height: 0;
+	margin-left: 15px;
+	margin-top: 35px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	-webkit-transition: all 0.3s cubic-bezier(0.91, 0.1, 1, 0.54);
+	-moz-transition: all 0.3s cubic-bezier(0.91, 0.1, 1, 0.54);
+	transition: all 0.3s cubic-bezier(0.91, 0.1, 1, 0.54);
+}
+
+._circle {
+	width: 30px;
+	height: 30px;
+	margin-left: 0;
+	margin-top: 20px;
+}
+
+._line-base {
+	width: 0;
+	height: 3px;
+	margin-top: 34px;
+	vertical-align: top;
+	display: inline-block;
+	background-color: black;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+
+._line {
+	width: 100%;
+	position: relative;
+}
+
+._line-glow {
+	width: 50px;
+	height: 3px;
+	position: relative;
+	float: right;
+	background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+	-webkit-transition: all 0.23s linear;
+	-moz-transition: all 0.23s linear;
+	transition: all 0.23s linear;
+}
+
+._line-text {
+	width: 160px;
+	text-align: center;
+	height: auto;
+	font-size: 16px;
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: -65px;
+	opacity: 0;
+	line-height: 22px;
+	font-family: Quicksand;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+._flex-vertical {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	vertical-align: center;
+}
+
+._skill-container {
+	width: 100%;
+	position: relative;
+	height: auto;
+}
+
+._skill-container span {
+	font-size: 18px;
+	font-family: Quicksand;
+	display: block;
+	margin-bottom: 8px;
+	opacity: 0;
+	-webkit-transition: all 0.5s cubic-bezier(1, 1.46, .34, 1.23);
+	-moz-transition: all 0.5s cubic-bezier(1, 1.46, .34, 1.23);
+	transition: all 0.5s cubic-bezier(1, 1.46, .34, 1.23);
+	-webkit-transform: translate(50%, 50%) scale(2);
+	-moz-transform: translate(50%, 50%) scale(2);
+	transform: translate(50%, 50%) scale(2);
+}
+
+._skill-container div {
+	width: 0;
+	height: 8px;
+	border-radius: 4px;
+	background-color: rgba(150, 180, 80, 1);
+}
+
+._flex-grid {
+	display: flex;
+	justify-content: space-between;
+}
+
+._icon-hobbies {
+	width: 120px;
+	height: 120px;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+/* EXPERIENCE PAGE */
+
+._exp-row {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+
+._exp-info-container {
+    padding: 0 0 0 24px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+._exp-info-container h2 {
+    font-size: 18px;
+    margin: 0 0 4px 0;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+._exp-row:hover ._exp-info-container h2 {
+    color: #43bc76;
+    cursor: pointer;
+}
+
+._exp-img-container {
+    width: 240px;
+    height: auto;
+    position: relative;
+}
+
+._exp-img {
+    width: 100%;
+}
+
+._img-back {
+    z-index: 0;
+}
+
+._img-front {
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+._exp-row:hover ._img-front {
+    opacity: 0;
+    cursor: pointer;
+}
+
+._exp-tools {
+    margin: 0;
+    font-size: 16px;
+    font-family: Quicksand;
+}
+
+._exp-snippet {
+    color: #666;
+}
+
+._exp-divider {
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    margin: 24px 0 40px 0;
+    background-color: #eee;
+}
