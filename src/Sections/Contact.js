@@ -18,28 +18,30 @@ class Contact extends Component {
     }
 
     handleSubmit = e => {
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
-        }).then(
-            () => {
-                var wheels = document.querySelectorAll(".sm-icon-circle");
-                for (var i = 0; i < wheels.length; i++) {
-                    wheels[i].style.transform = "rotate(2160deg)";
+        if (this.state.name !== "" && this.state.email !== "" && this.state.message !== "") {
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...this.state })
+            }).then(
+                () => {
+                    var wheels = document.querySelectorAll(".sm-icon-circle");
+                    for (var i = 0; i < wheels.length; i++) {
+                        wheels[i].style.transform = "rotate(2160deg)";
+                    }
+                    var taxi = document.getElementById("form-taxi");
+                    var formButton = document.getElementById("submit-form");
+                    taxi.style.marginLeft = "1162px";
+                    formButton.innerHTML = "sending...";
+                    setTimeout(function() {
+                        taxi.style.transform = "translateX(-1010px)";
+                        formButton.innerHTML = "sent!";
+                    }, 1500);
                 }
-                var taxi = document.getElementById("form-taxi");
-                var formButton = document.getElementById("submit-form");
-                taxi.style.marginLeft = "1119px";
-                formButton.innerHTML = "sending...";
-                setTimeout(function() {
-                    taxi.style.transform = "translateX(-970px)";
-                    formButton.innerHTML = "sent!";
-                }, 1500);
-            }
-        ).catch(
-            error => alert(error)
-        );
+            ).catch(
+                error => alert(error)
+            );
+        }
         e.preventDefault();
     }
 
