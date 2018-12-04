@@ -56,10 +56,9 @@ class Contact extends Component {
         return (
             <div onmousedown="return false" id='page-container-4' className='_page-container' style={{zIndex: this.props.visible, opacity: this.props.visible}}>
                 <form id="contact-form" onSubmit={this.handleSubmit}>
-                    <input type="hidden" name="contact" value="contact" />
                     <div className="_contact-input-container">
-                        <input onChange={this.handleChange} value={name} name="name" placeholder="Name" />
-                        <input onChange={this.handleChange} value={email} name="email" placeholder="Email" />
+                        <input type="text" onChange={this.handleChange} value={name} name="name" placeholder="Name" />
+                        <input type="email" onChange={this.handleChange} value={email} name="email" placeholder="Email" />
                     </div>
                     <textarea onChange={this.handleChange} value={message} name="message" placeholder="Message" />
                     <button id="form-button" type="submit"></button>
