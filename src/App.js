@@ -180,6 +180,7 @@ class App extends Component {
             	pageLoaded: { ...this.state.pageLoaded, cnt: 1 },
             	vis: { abt: 0, exp: 0, skl: 0, cnt: 1 }
             });
+
 		}
 	}
   render() {

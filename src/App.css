@@ -37,6 +37,7 @@ html, body {
 	opacity: 0;
 	display: inline-block;
 	color: #444;
+	overflow: hidden;
 }
 
 ._page-container p {
@@ -255,4 +256,124 @@ html, body {
     height: 1px;
     margin: 24px 0 40px 0;
     background-color: #eee;
+}
+
+/* CONTACT */
+
+#contact-form {
+    width: 100%;
+    position: relative;
+}
+
+#contact-form h2 {
+    font-family: Quicksand;
+    font-size: 20px;
+}
+
+._contact-input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 24px;
+    margin-bottom: 24px;
+}
+
+._contact-input-container input, textarea {
+    padding: 14px 16px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 16px;
+    color: #444;
+    font-family: Quicksand;
+}
+
+textarea {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    resize: none;
+    height: 240px;
+}
+
+#contact-form button {
+    display: none;
+}
+
+#submit-form {
+    width: 250px;
+    position: relative;
+    margin: auto;
+    height: 0;
+    border-top: none;
+    border-bottom: 100px solid black;
+    border-left: 0px solid transparent;
+    border-right: 45px solid transparent;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    text-align: center;
+    line-height: 80px;
+    font-size: 28px;
+    color: #ddd;
+    font-family: Quicksand;
+    border-radius: 20px;
+}
+
+#submit-form:hover {
+    cursor: pointer;
+}
+
+#page-container-4 h2 {
+    text-align: center;
+    margin-top: 47px;
+    font-family: Quicksand;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.0);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.6);
+    -webkit-transition: text-shadow 0.3s;
+        -moz-transition: text-shadow 0.3s;
+        transition: text-shadow 0.3s;
+}
+
+#page-container-4 h2:hover {
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+.sm-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.sm-container img {
+    width: 50px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.sm-container img:hover {
+    cursor: pointer;
+}
+
+#form-taxi {
+    width: 314px;
+    position: relative;
+    margin-left: 149px;
+    margin-top: 76px;
+    -webkit-transition: margin-left 3s ease-in-out;
+    -moz-transition: margin-left 3s ease-in-out;
+    transition: margin-left 3s ease-in-out;
+}
+
+.sm-icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+    background-color: white;
+    -webkit-transition: transform 3s ease-in-out;
+    -moz-transition: transform 3s ease-in-out;
+    transition: transform 3s ease-in-out;
 }
