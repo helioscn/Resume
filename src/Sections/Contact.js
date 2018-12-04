@@ -55,7 +55,7 @@ class Contact extends Component {
         const { name, email, message } = this.state;
         return (
             <div onmousedown="return false" id='page-container-4' className='_page-container' style={{zIndex: this.props.visible, opacity: this.props.visible}}>
-                <form id="contact-form" onSubmit={this.handleSubmit}>
+                <form name="contact" netlify="true" id="contact-form" onSubmit={this.handleSubmit}>
                     <div className="_contact-input-container">
                         <input type="text" onChange={this.handleChange} value={name} name="name" placeholder="Name" />
                         <input type="email" onChange={this.handleChange} value={email} name="email" placeholder="Email" />
