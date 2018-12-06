@@ -17,6 +17,11 @@ html, body {
 	min-height: 100%;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #main-container {
 	width: 1024px;
 	height: 600px;
@@ -337,7 +342,7 @@ textarea {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: -61px;
+    margin-top: -60px;
 }
 
 .sm-container img {
