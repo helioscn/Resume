@@ -6,10 +6,10 @@ const experience = (props) => {
             <div class="_exp-row">
                 <div className="_exp-img-container">
                    <img src={require("../Images/Portfolio/haf-back.jpg")} className="_exp-img _img-back" />
-                   <img src={require("../Images/Portfolio/haf-front.jpg")} className="_exp-img _img-front" />
+                   <a href="http://www.homeartfurniture.com/"><img src={require("../Images/Portfolio/haf-front.jpg")} className="_exp-img _img-front" /></a>
             	</div>
             	<div className="_exp-info-container">
-            	    <h2>HomeArt Furnishing</h2>
+            	    <a href="http://www.homeartfurniture.com/"><h2>HomeArt Furnishing</h2></a>
             	    <span className="_exp-tools">HTML, CSS, JavaScript, jQuery, PHP, SQL</span>
             	    <p class="_exp-snippet">A website built for a furnishing company. Comes with a simple CMS to make product management easier. Facebook Graph API.</p>
             	</div>
@@ -18,10 +18,10 @@ const experience = (props) => {
                 <div class="_exp-row">
                     <div className="_exp-img-container">
                     <img src={require("../Images/Portfolio/dct-back.jpg")} className="_exp-img _img-back" />
-                    <img src={require("../Images/Portfolio/dct-front.jpg")} className="_exp-img _img-front" />
+                    <a href="http://www.dcomforttech.com/"><img src={require("../Images/Portfolio/dct-front.jpg")} className="_exp-img _img-front" /></a>
                 </div>
                 <div className="_exp-info-container">
-                    <h2>Dragon Comfort Technologies Inc.</h2>
+                    <a href="http://www.dcomforttech.com/"><h2>Dragon Comfort Technologies Inc.</h2></a>
                     <span className="_exp-tools">Wordpress, HTML, CSS</span>
                     <p class="_exp-snippet">First time using Wordpress. Opted for Wordpress due to tight deadline of 3 days.</p>
                 </div>
@@ -30,10 +30,10 @@ const experience = (props) => {
             <div class="_exp-row">
                 <div className="_exp-img-container">
                     <img src={require("../Images/Portfolio/edf-back.jpg")} className="_exp-img _img-back" />
-                    <img src={require("../Images/Portfolio/edf-front.jpg")} className="_exp-img _img-front" />
+                    <a href="http://www.edragonfire.com/"><img src={require("../Images/Portfolio/edf-front.jpg")} className="_exp-img _img-front" /></a>
                 </div>
                 <div className="_exp-info-container">
-                    <h2>Dragon Fire Distribution Inc.</h2>
+                    <a href="http://www.edragonfire.com/"><h2>Dragon Fire Distribution Inc.</h2></a>
                     <span className="_exp-tools">HTML, CSS, JavaScript, jQuery, PHP, SQL</span>
                     <p class="_exp-snippet">Original website was built 6-7 years ago by somebody else. Made website responsive. Threw in a contact form.</p>
                 </div>
@@ -42,10 +42,10 @@ const experience = (props) => {
             <div class="_exp-row">
                 <div className="_exp-img-container">
                     <img src={require("../Images/Portfolio/opp-back.jpg")} className="_exp-img _img-back" />
-                    <img src={require("../Images/Portfolio/opp-front.jpg")} className="_exp-img _img-front" />
+                    <a href="http://www.ontoproperties.com/"><img src={require("../Images/Portfolio/opp-front.jpg")} className="_exp-img _img-front" /></a>
                 </div>
                 <div className="_exp-info-container">
-                    <h2>ONTO Properties Photography</h2>
+                    <a href="http://www.ontoproperties.com/"><h2>ONTO Properties Photography</h2></a>
                     <span className="_exp-tools">HTML, CSS, JavaScript, jQuery, PHP, SQL</span>
                     <p class="_exp-snippet">First website deployed this year for my real estate photography business.</p>
                 </div>
