@@ -46,7 +46,7 @@ class Menu extends React.Component {
 	render() {
 		return(
 			<div onClick={this.props.onClick} id={"menu-container"}>
-				<img className={'portrait'} src={require("../Images/me2.png")} alt={""}/>
+				<img className={'portrait'} src={require("../Images/me2.png")} alt={"My Face"}/>
 				<h1 id={'name'}>HELIOS CHAN</h1>
 				<div className={'optionDiv'} onClick={() => this.setPage(1)} onMouseLeave={() => this.changeColour(this.state.currentPage, false)} onMouseEnter={() => this.changeColour(1, true)}><Option name={'About Me'} num={1} hover={this.state.optionSelect} /></div>
 				<div className={'optionDiv'} onClick={() => this.setPage(2)} onMouseLeave={() => this.changeColour(this.state.currentPage, false)}  onMouseEnter={() => this.changeColour(2, true)}><Option name={'Experience'} num={2} hover={this.state.optionSelect} /></div>

@@ -68,8 +68,8 @@ class Contact extends Component {
                 <div id="form-taxi">
                 <div onClick={(e) => this.sendClick(e)} id="submit-form">send</div>
                 <div className="sm-container">
-                    <a href="https://www.linkedin.com/in/helioschan"><div className="sm-icon-circle"><img src={require("../Images/linkedin.png")} /></div></a>
-                    <a href="https://github.com/helioscn"><div className="sm-icon-circle"><img src={require("../Images/github.png")} /></div></a>
+                    <a href="https://www.linkedin.com/in/helioschan"><div className="sm-icon-circle"><img alt="LinkedIn" src={require("../Images/linkedin.png")} /></div></a>
+                    <a href="https://github.com/helioscn"><div className="sm-icon-circle"><img alt="GitHub" src={require("../Images/github.png")} /></div></a>
                 </div>
                 </div>
                 <h2>helioschan95@gmail.com</h2>

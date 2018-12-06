@@ -13,10 +13,10 @@ const about = (props) => {
 			</div>
 			<p></p>
 			<div className='_flex-grid'>
-				<img className={'_icon-hobbies'} src={require("../Images/pc.png")} alt={""}/>
-				<img className={'_icon-hobbies'} src={require("../Images/cooking.png")} alt={""}/>
-				<img className={'_icon-hobbies'} src={require("../Images/swimming.png")} alt={""}/>
-				<img className={'_icon-hobbies'} src={require("../Images/dancing.png")} alt={""}/>
+				<img alt="Computer" className={'_icon-hobbies'} src={require("../Images/pc.png")} alt={""}/>
+				<img alt="Cooking" className={'_icon-hobbies'} src={require("../Images/cooking.png")} alt={""}/>
+				<img alt="Swimming" className={'_icon-hobbies'} src={require("../Images/swimming.png")} alt={""}/>
+				<img alt="Dancing" className={'_icon-hobbies'} src={require("../Images/dancing.png")} alt={""}/>
 			</div>
 		</div>
 	)
